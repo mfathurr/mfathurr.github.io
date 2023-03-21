@@ -1,0 +1,47 @@
+/* mulish-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/mulish-v12-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("../fonts/mulish-v12-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: #404146;
+  color: white;
+  display: flex;
+  padding: 2em;
+}
+
+nav .brand-title span {
+  font-size: 1.75em;
+}
+
+nav .nav-link {
+  align-items: center;
+  display: flex;
+  gap: 2em;
+  margin-left: 3em;
+}
+
+nav .nav-link a {
+  color: white;
+  opacity: 0.7;
+}

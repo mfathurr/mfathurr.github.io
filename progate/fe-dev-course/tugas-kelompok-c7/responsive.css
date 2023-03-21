@@ -1,0 +1,35 @@
+/* responsive tablet max-height: 1024px */
+@media all and (max-width: 1024px) {
+  /* Karena sudah mau deadline. Kapan-kapan aja. */
+}
+
+/* responsive smartphone max-height: 640px */
+@media all and (max-width: 640px) {
+  .banner {
+    margin: 80px auto 20px;
+    width: 100%;
+  }
+
+  .banner-title {
+    text-align: center;
+  }
+
+  .banner-content span {
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .banner-image {
+    display: flex;
+    float: none;
+    margin: 20px auto;
+  }
+
+  .header-list {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
