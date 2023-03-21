@@ -54,9 +54,10 @@ nav .nav-link a {
 }
 
 .hero-section {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 3em 0;
 }
 
 .hero-section h1 {
@@ -71,8 +72,37 @@ nav .nav-link a {
   font-size: 3em;
 }
 
-.hero-section img {
+.hero-section img,
+.card img {
   display: block;
   height: auto;
   max-width: 100%;
+}
+
+#about,
+#portofolio {
+  margin: 8em 0;
+}
+
+#about h2,
+#portofolio h2 {
+  font-size: 2.25em;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#about p {
+  line-height: 1.5em;
+  padding: 0 4em;
+  text-align: justify;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  text-align: center;
 }
