@@ -46,7 +46,7 @@ nav {
 
 nav .brand-title a,
 footer .footer-title span {
-  font-size: 1.75em;
+  font-size: 2.25em;
 }
 
 nav .brand-title {
@@ -59,6 +59,7 @@ nav .brand-title a {
 }
 
 nav .menu-icon {
+  align-items: center;
   display: inherit;
   font-size: 2em;
   margin-left: 3em;
@@ -67,13 +68,6 @@ nav .menu-icon {
 nav .nav-link {
   display: none;
 }
-
-/* nav .nav-link {
-  align-items: center;
-  display: flex;
-  gap: 2em;
-  margin-left: 3em;
-} */
 
 nav .nav-link a,
 .footer-nav-link a {
