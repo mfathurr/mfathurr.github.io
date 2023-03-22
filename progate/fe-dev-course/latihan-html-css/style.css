@@ -30,16 +30,27 @@ a {
   text-decoration: none;
 }
 
+header {
+  position: relative;
+}
+
 nav {
   background-color: #404146;
   color: white;
   display: flex;
   padding: 1em;
+  position: fixed;
+  top: 0.75em;
+  width: 100%;
 }
 
-nav .brand-title span,
+nav .brand-title a,
 footer .footer-title span {
   font-size: 1.75em;
+}
+
+nav .brand-title a {
+  color: white;
 }
 
 nav .nav-link {
@@ -59,7 +70,7 @@ nav .nav-link a,
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 3em 0;
+  margin: 8em 0;
 }
 
 .hero-section h1 {
@@ -84,7 +95,7 @@ nav .nav-link a,
 #about,
 #portofolio,
 #contact {
-  margin: 8em 0;
+  margin: 12em 0;
 }
 
 #about h2,
