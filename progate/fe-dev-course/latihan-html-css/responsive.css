@@ -1,5 +1,5 @@
 /* Catatan:
-- min-width: 640px (kotak portofolionya 1)
+- min-width: 640px (kotak portofolionya 2)
 - min-width: 768px (kotak portofolionya 2)
 - min-width: 1024px (kotak portofolionya 3) */
 
@@ -25,6 +25,10 @@
 
   nav .brand-title a {
     color: white;
+  }
+
+  nav .menu-icon {
+    display: none;
   }
 
   nav .nav-link {
@@ -157,7 +161,19 @@
   }
 }
 
-@media all and (min-width: 768px) {
+/* Breakpoint 768px - 1023px */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  nav .menu-icon {
+    display: none;
+  }
+
+  nav .nav-link {
+    align-items: center;
+    display: flex;
+    gap: 2em;
+    margin-left: 3em;
+  }
+
   .hero-section {
     margin: 12em 0;
   }
@@ -196,5 +212,58 @@
 
   .card img {
     width: 175px;
+  }
+}
+
+/* Breakpoint 640px - 767px */
+@media all and (min-width: 640px) and (max-width: 767px) {
+  nav {
+    display: flex;
+  }
+
+  nav .brand-title {
+    display: inherit;
+    flex-grow: 2;
+  }
+
+  nav .nav-link {
+    display: none;
+  }
+
+  .hero-section h1 {
+    font-size: 4em;
+  }
+
+  #about h2,
+  #portofolio h2,
+  #contact h2 {
+    font-size: 2em;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .hero-section img {
+    width: 225px;
+  }
+
+  .card-wrapper {
+    justify-content: initial;
+  }
+
+  .card {
+    align-items: center;
+    display: inherit;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: 50%;
+  }
+
+  .card img {
+    width: 175px;
+  }
+
+  .input-email,
+  .input-message {
+    padding: 1em 8em;
   }
 }

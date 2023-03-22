@@ -49,16 +49,31 @@ footer .footer-title span {
   font-size: 1.75em;
 }
 
+nav .brand-title {
+  display: inherit;
+  flex-grow: 2;
+}
+
 nav .brand-title a {
   color: white;
 }
 
+nav .menu-icon {
+  display: inherit;
+  font-size: 2em;
+  margin-left: 3em;
+}
+
 nav .nav-link {
+  display: none;
+}
+
+/* nav .nav-link {
   align-items: center;
   display: flex;
   gap: 2em;
   margin-left: 3em;
-}
+} */
 
 nav .nav-link a,
 .footer-nav-link a {
@@ -70,11 +85,11 @@ nav .nav-link a,
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 8em 0;
+  margin: 12em 0;
 }
 
 .hero-section h1 {
-  font-size: 6em;
+  font-size: 3.5em;
 }
 
 .hero-section h1 span {
@@ -82,7 +97,11 @@ nav .nav-link a,
 }
 
 .hero-section h2 {
-  font-size: 3em;
+  font-size: 2em;
+}
+
+.hero-section img {
+  width: 225px;
 }
 
 .hero-section img,
@@ -90,6 +109,18 @@ nav .nav-link a,
   display: block;
   height: auto;
   max-width: 100%;
+}
+
+.card {
+  align-items: center;
+  display: inherit;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.card img {
+  width: 175px;
 }
 
 #about,
@@ -102,7 +133,7 @@ nav .nav-link a,
 #portofolio h2,
 #contact h2 {
   font-size: 2.25em;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
@@ -132,7 +163,7 @@ nav .nav-link a,
 
 .input-email,
 .input-message {
-  padding: 1em 8em;
+  padding: 0 1.5em;
 }
 
 input,
