@@ -37,7 +37,8 @@ nav {
   padding: 1em;
 }
 
-nav .brand-title span {
+nav .brand-title span,
+footer .footer-title span {
   font-size: 1.75em;
 }
 
@@ -48,7 +49,8 @@ nav .nav-link {
   margin-left: 3em;
 }
 
-nav .nav-link a {
+nav .nav-link a,
+.footer-nav-link a {
   color: white;
   opacity: 0.7;
 }
@@ -80,12 +82,14 @@ nav .nav-link a {
 }
 
 #about,
-#portofolio {
+#portofolio,
+#contact {
   margin: 8em 0;
 }
 
 #about h2,
-#portofolio h2 {
+#portofolio h2,
+#contact h2 {
   font-size: 2.25em;
   margin-bottom: 2rem;
   text-align: center;
@@ -105,4 +109,64 @@ nav .nav-link a {
 
 .card {
   text-align: center;
+}
+
+#contact {
+  background-color: #f4f4f4;
+}
+
+#contact h2 {
+  padding-top: 2em;
+}
+
+.input-email,
+.input-message {
+  padding: 1em 8em;
+}
+
+input,
+textarea {
+  border: 2px solid #404146;
+  border-radius: 5px;
+  margin-top: 1.5em;
+  padding: 1em;
+  width: 100%;
+}
+
+input {
+  font-size: 1em;
+}
+
+textarea {
+  font-size: 1rem;
+}
+
+.btn-wrapper {
+  padding: 1em 12em;
+  text-align: center;
+}
+
+.btn {
+  background-color: #f7e989;
+  color: black;
+  font-weight: bold;
+  padding: 1em 3em;
+}
+
+footer {
+  background-color: #7c7d82;
+  color: white;
+  display: flex;
+  padding: 2em;
+}
+
+.footer-title {
+  display: inherit;
+  flex-grow: 2;
+}
+
+.footer-nav-link {
+  display: inherit;
+  flex-direction: column;
+  gap: 1em;
 }
