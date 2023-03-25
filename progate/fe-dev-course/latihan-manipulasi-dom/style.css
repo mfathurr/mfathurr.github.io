@@ -44,3 +44,9 @@ input,
 button {
   padding: 0.5rem;
 }
+
+hr {
+  border: 1px solid burlywood;
+  opacity: 0.7;
+  width: 100%;
+}
