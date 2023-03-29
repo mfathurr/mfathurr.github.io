@@ -39,7 +39,10 @@ operators.forEach((operator) => {
 });
 
 const inputOperator = (operator) => {
-  prevNumber = currentNumber;
+  if (calculationOperator === "") {
+    prevNumber = currentNumber;
+  }
+
   calculationOperator = operator;
   currentNumber = "";
 };
@@ -58,16 +61,16 @@ const calculate = () => {
 
   switch (calculationOperator) {
     case "+":
-      result = Number(prevNumber) + Number(currentNumber);
+      result = parseFloat(prevNumber) + parseFloat(currentNumber);
       break;
     case "-":
-      result = Number(prevNumber) - Number(currentNumber);
+      result = parseFloat(prevNumber) - parseFloat(currentNumber);
       break;
     case "*":
-      result = Number(prevNumber) * Number(currentNumber);
+      result = parseFloat(prevNumber) * parseFloat(currentNumber);
       break;
     case "/":
-      result = Number(prevNumber) / Number(currentNumber);
+      result = parseFloat(prevNumber) / parseFloat(currentNumber);
       break;
 
     default:
@@ -81,7 +84,28 @@ const calculate = () => {
 // ============================ (Tombol .) ================================
 const decimal = document.querySelector(".decimal");
 
-decimal.addEventListener("click", () => {});
+decimal.addEventListener("click", (e) => {
+  inputDecimal(e.target.value);
+  updateScreen(currentNumber);
+});
+
+const inputDecimal = (dot) => {
+  if (currentNumber.includes(".")) {
+    return;
+  }
+
+  currentNumber += dot;
+  console.log(currentNumber);
+};
+// ========================================================================
+
+// ============================ (Tombol %) ================================
+const percentage = document.querySelector(".percentage");
+
+percentage.addEventListener("click", (e) => {
+  percentage(e.target.value);
+  updateScreen(currentNumber);
+});
 // ========================================================================
 
 // ============================ (Tombol AC) ===============================
