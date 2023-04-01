@@ -102,10 +102,14 @@ const inputDecimal = (dot) => {
 // ============================ (Tombol %) ================================
 const percentage = document.querySelector(".percentage");
 
-percentage.addEventListener("click", (e) => {
-  percentage(e.target.value);
+percentage.addEventListener("click", () => {
+  persen();
   updateScreen(currentNumber);
 });
+
+const persen = () => {
+  currentNumber = (prevNumber * currentNumber) / 100;
+};
 // ========================================================================
 
 // ============================ (Tombol AC) ===============================
