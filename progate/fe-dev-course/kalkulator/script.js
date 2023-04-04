@@ -107,8 +107,16 @@ percentage.addEventListener("click", () => {
   updateScreen(currentNumber);
 });
 
+// const persen = () => {
+//   currentNumber = (prevNumber * currentNumber) / 100;
+// };
+
 const persen = () => {
-  currentNumber = (prevNumber * currentNumber) / 100;
+  if (calculationOperator === "+" || calculationOperator === "-") {
+    currentNumber = (prevNumber * currentNumber) / 100;
+  } else if (calculationOperator === "*" || calculationOperator === "/") {
+    currentNumber = currentNumber / 100;
+  }
 };
 // ========================================================================
 
