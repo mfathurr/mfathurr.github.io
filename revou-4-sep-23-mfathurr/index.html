@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="Author" content="Muhammad Fathur Rachman" />
+    <meta
+      name="description"
+      content="Tugas Akhir Mini Coding Project Fundamental Course: Software Engineering"
+    />
+    <title>Kalkulator Matematik</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">Katik <span>Kalkulator Matematik</span></a>
+    </header>
+
+    <main>
+      <section class="info">
+        <h1>Welcome to Katik</h1>
+        <p>Hai Sobat, Selamat datang di Katik :)</p>
+        <p>
+          Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas
+          keliling bangun datar
+        </p>
+        <nav>
+          <button type="button" class="btn-nav">Hitung Luas</button>
+          <button type="button" class="btn-nav">Hitung Keliling</button>
+        </nav>
+      </section>
+
+      <section id="luas">
+        <h2>Luas Persegi</h2>
+        <figure>
+          <img src="./images/Square.png" alt="Square Image" />
+          <figcaption>Bujur Sangkar</figcaption>
+        </figure>
+        <p>Rumus Luas Persegi yaitu:</p>
+        <p>L = S x S</p>
+        <p>Dimana:</p>
+        <p>L = Luas</p>
+        <p>S = Sisi</p>
+        <hr />
+        <h2>Hitung Luas Persegi</h2>
+        <form method="post">
+          <input type="number" name="number" id="numberLuas" required />
+          <p>L = S x S</p>
+          <p>L = <span class="sisi1">0</span> x <span class="sisi2">0</span></p>
+          <p>L = <span>0</span></p>
+          <div class="btn-action">
+            <button type="submit" class="btn-submit">Hitung</button>
+            <button type="reset" class="btn-reset">Reset</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="keliling">
+        <h2>Keliling Persegi</h2>
+        <figure>
+          <img src="./images/Square.png" alt="Square Image" />
+          <figcaption>Bujur Sangkar</figcaption>
+        </figure>
+        <p>Rumus Keliling Persegi yaitu:</p>
+        <p>K = 4 x S</p>
+        <p>Dimana:</p>
+        <p>S = Sisi</p>
+        <hr />
+        <h2>Hitung Keliling Persegi</h2>
+        <input type="number" id="numberKeliling" required />
+        <p>L = 4 x S</p>
+        <p>L = 4 x <span class="sisi1">0</span></p>
+        <p>L = <span>0</span></p>
+        <div class="btn-action">
+          <button type="submit" class="btn-submit">Hitung</button>
+          <button type="reset" class="btn-reset">Reset</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Project Timeline:</p>
+      <ul>
+        <li><span>Start:</span> 9 September 2023, 13:19</li>
+        <li><span>Finished:</span> September 2023, 2:00</li>
+      </ul>
+      <p>Support:</p>
+      <a href="https://trakteer.id/mfathurr" target="_blank"
+        ><img
+          id="wse-buttons-preview"
+          src="https://cdn.trakteer.id/images/embed/trbtn-red-5.png"
+          height="40"
+          style="border: 0px; height: 40px"
+          alt="Trakteer Saya"
+      /></a>
+      <p>
+        Made with <span>&hearts;</span> + ☕ + 🍯 from Bekasi Regency, Indonesia
+        &COPY;
+        <a
+          href="https://github.com/mfathurr"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Muhammad Fathur Rachman</a
+        >
+      </p>
+    </footer>
+
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
