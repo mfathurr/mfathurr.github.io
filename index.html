@@ -4,25 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Muhammad Fathur Rachman" />
+    <meta name="description" content="Portfolio Muhammad Fathur Rachman" />
     <title>MFR ... Under Construction</title>
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mooli&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body style="background-color: blanchedalmond">
-    <h1
-      style="
-        align-items: center;
-        color: steelblue;
-        display: flex;
-        font-weight: 700;
-        height: 100vh;
-        justify-content: center;
-        margin: 0 auto;
-        text-shadow: rgb(56, 102, 139) 1px 0 5px;
-        width: 75vw;
-      "
-    >
-      The website is currently under construction for an indefinite period.
-      <br />
-      Thank you for your understanding.
-    </h1>
+  <body class="box-border bg-main-color text-white">
+    <header class="my-10 sm:my-20">
+      <h1 class="text-4xl sm:text-5xl text-center">Muhammad Fathur Rachman</h1>
+    </header>
+
+    <main class="my-20">
+      <div class="w-4/5 mx-auto grid grid-cols-3 grid-rows-3 gap-5 text-center">
+        <a href="#" class="btn-main">Blog</a>
+        <a href="#" class="btn-main sm:col-start-3">Curriculum Vitae (CV)</a>
+        <a href="#" class="btn-main sm:col-start-2 sm:row-start-2">Portfolio</a>
+        <a href="#" class="btn-main sm:row-start-3">Store</a>
+        <a href="#" class="btn-main sm:col-start-3 sm:row-start-3">Contact</a>
+      </div>
+    </main>
+
+    <footer class="text-center">
+      Made with <span>&hearts;</span> + ☕ + 🍯 from Bekasi Regency, Indonesia |
+      &copy; Muhammad Fathur Rachman - 2023
+    </footer>
   </body>
 </html>

@@ -1,0 +1,7 @@
+body {
+  font-family: "Mooli", sans-serif;
+}
+
+footer span:first-child {
+  color: red;
+}
