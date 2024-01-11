@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .btn-main {
-  @apply w-full sm:col-span-full  inline-block bg-btn-color rounded shadow-lg shadow-shdw-color px-8 py-4 mx-auto my-2 sm:my-0;
+  @apply w-full sm:col-span-full  inline-block bg-btn-color rounded shadow-lg shadow-shdw-color px-8 py-4 md:py-2 md:px-2 mx-auto my-2 sm:my-0;
 }
