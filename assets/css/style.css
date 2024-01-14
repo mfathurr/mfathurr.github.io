@@ -534,14 +534,13 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
 }
 
 .my-20 {
@@ -570,6 +569,15 @@ video {
   gap: 1.25rem;
 }
 
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
+}
+
+.border-blue-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(96 165 250 / var(--tw-border-opacity));
+}
+
 .bg-main-color {
   --tw-bg-opacity: 1;
   background-color: rgb(38 47 58 / var(--tw-bg-opacity));
@@ -594,6 +602,20 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-150 {
+  transition-duration: 150ms;
+}
+
+.\[box-shadow\:0_10px_0_0_\#1b6ff8\2c 0_15px_0_0_\#1b70f841\] {
+  box-shadow: 0 10px 0 0 #1b6ff8,0 15px 0 0 #1b70f841;
+}
+
 .btn-main {
   margin-left: auto;
   margin-right: auto;
@@ -601,7 +623,10 @@ video {
   margin-bottom: 0.5rem;
   display: inline-block;
   width: 100%;
-  border-radius: 0.25rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(10 19 30 / var(--tw-bg-opacity));
   padding-left: 2rem;
@@ -630,6 +655,19 @@ video {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+}
+
+.active\:translate-y-2:active {
+  --tw-translate-y: 0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.active\:border-b-\[0px\]:active {
+  border-bottom-width: 0px;
+}
+
+.active\:\[box-shadow\:0_0px_0_0_\#1b6ff8\2c 0_0px_0_0_\#1b70f841\]:active {
+  box-shadow: 0 0px 0 0 #1b6ff8,0 0px 0 0 #1b70f841;
 }
 
 @media (min-width: 640px) {
@@ -715,12 +753,14 @@ video {
     gap: 0.75rem;
   }
 
-  .md\:gap-4 {
-    gap: 1rem;
-  }
-
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:gap-5 {
+    gap: 1.25rem;
   }
 }
