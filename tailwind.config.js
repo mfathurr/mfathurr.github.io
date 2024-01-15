@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         "main-color": "#262f3a",
         "btn-color": "#0a131e",
-        "shdw-color": "#30dbe7",
+        "secondary-color": "#30dbe7",
       },
     },
   },
